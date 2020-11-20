@@ -126,5 +126,10 @@ $x = 1;
 $x += 5;
 echo $x;
 
+$nama = "Denita";
+$nama .= " ";
+$nama .= "Kusuma";
+echo $nama;
+
 
 ?>
