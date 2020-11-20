@@ -138,8 +138,12 @@ $nama1 = "Elda"
 
 //identitas
 // ====, !==
-var_dump(1 === "1");
+//var_dump(1 === "1");
 
+//logika
+//&&, ||, !
+$x = 11;
+var_dump($x < 20 && $x %2 == 0);
 
 
 ?>
