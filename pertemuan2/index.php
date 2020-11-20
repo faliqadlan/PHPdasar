@@ -122,14 +122,19 @@ $nama1 = "Elda"
 
 //Assignment (penugasan)
 // =, +=, , -=, *=, /=, %=, .=
-$x = 1;
-$x += 5;
-echo $x;
+// $x = 1;
+// $x += 5;
+// echo $x;
 
-$nama = "Denita";
-$nama .= " ";
-$nama .= "Kusuma";
-echo $nama;
+// $nama = "Denita";
+// $nama .= " ";
+// $nama .= "Kusuma";
+// echo $nama;
 
+//Perbandingan (tidak mengecek tipe datanya,
+// hanya nilainya)
+// <, >, <=, >=, ==
+
+var_dump(1<5);
 
 ?>
