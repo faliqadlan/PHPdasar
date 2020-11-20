@@ -141,9 +141,9 @@ $nama1 = "Elda"
 //var_dump(1 === "1");
 
 //logika
-//&&, ||, !
-$x = 11;
-var_dump($x < 20 && $x %2 == 0);
+//&& dan, || atau, !
+// $x = 11;
+// var_dump($x < 20 && $x %2 == 0);
 
 
 ?>
