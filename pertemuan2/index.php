@@ -131,10 +131,15 @@ $nama1 = "Elda"
 // $nama .= "Kusuma";
 // echo $nama;
 
-//Perbandingan (tidak mengecek tipe datanya,
-// hanya nilainya)
-// <, >, <=, >=, ==
+//Perbandingan (tidak mengecek tipe datanya, hanya nilainya)
+// <, >, <=, >=, ==, !=
 
-var_dump(1<5);
+// var_dump(1<5);
+
+//identitas
+// ====, !==
+var_dump(1 === "1");
+
+
 
 ?>
