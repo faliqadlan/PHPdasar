@@ -17,5 +17,10 @@
     //echo date("l d", mktime(0,0,0,7,8,1999));
 
     // strtotime
-    echo date("l", strtotime("8 Jul 1999"))
+    //echo date("l", strtotime("8 Jul 1999"))
+
+    //strlen() meghitung panjang string
+    // strcmp() membandingkan
+    //explode() str to array
+
 ?>
