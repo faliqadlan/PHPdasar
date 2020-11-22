@@ -12,12 +12,24 @@
 // key-nya adalah string yang kita buat sendiri
 
 $students = [
-    "nama" => "Muhammad Faliq Adlan",
-    "nim" => "175090307111008",
-    "email" => "faliq67@gmail.com",
-    "jurusan" => "Fisika"
+    [
+        "nim" => "175090307111008",
+        "nama" => "Muhammad Faliq Adlan",
+        "email" => "faliq67@gmail.com",
+        "jurusan" => "Fisika",
+        "gambar" => "lat.jpg"
+    ],
+    [
+        "nama" => "Muhammad Faliq Adlan_1",
+        "nim" => "175090307111008_1",
+        "email" => "faliq67@gmail.com_1",
+        "jurusan" => "Fisika_1",
+        "gambar" => "lat.jpg"
+        // "tugas" => [90, 80, 100]
+    ]
 ];
 
+// echo $students[1]["tugas"];
 ?>
 
 <!DOCTYPE html>
@@ -33,20 +45,15 @@ $students = [
     <h1>Daftar Mahasiswa</h1>
     <?php foreach ($students as $student) : ?>
         <ul>
-
-            <?php for ($i = 0; $i < count($details); $i++) : ?>
-                <li>
-
-                    <?= $details[$i] ?>
-                    <?= ":" ?>
-                    <?= $student[$i]; ?>
-
-                </li>
-            <?php endfor ?>
-
+            <li>
+                <img src="img/<?= $student["gambar"] ?>">
+            </li>
+            <li>Nama : <?= $student["nama"]; ?></li>
+            <li>nim : <?= $student["nim"]; ?></li>
+            <li>jurusan : <?= $student["jurusan"]; ?></li>
+            <li>email : <?= $student["email"]; ?></li>
         </ul>
     <?php endforeach ?>
-
 </body>
 
 </html>
