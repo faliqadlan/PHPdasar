@@ -50,13 +50,21 @@ $students = [
 
 <body>
     <h1>Daftar Mahasiswa</h1>
-    <?php foreach ($students as $student) : ?>
-        <ul>
-            <li><img src="img/<?= $student["gambar"]; ?>"></li>
-            <li><?= $student["nama"]; ?></li>
-            <li><?= $student["nim"]; ?></li>
-        </ul>
-    <?php endforeach ?>
+    <ul>
+        <?php foreach ($students as $student) : ?>
+            <li>
+                <a href="latihan2.php?
+                nama=<?= $student["nama"]; ?>
+                &nim=<?= $student["nim"]; ?>
+                &email=<?= $student["email"]; ?>
+                &jurusan=<?= $student["jurusan"]; ?>
+                &gambar=<?= $student["gambar"]; ?>">
+                    <?= $student["nama"]; ?>
+                </a>
+            </li>
+        <?php endforeach ?>
+
+    </ul>
 </body>
 
 </html>
